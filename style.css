@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{
+   padding: 0;
+   margin: 0;
+}
+
+body{
+    margin-top: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#principal{
+    background-image: linear-gradient(to right, #482faf, #993399d6);
+    min-width: 350px ; /* largura minima*/
+    max-width: 1000px; /* largura maxima*/
+    border-radius: 10px;
+    margin: auto; /* Para centralizar e se adpata conforme aumenta e diminui a tela */
+    margin-bottom: 10px; /* margem na parte de baixo */
+    padding: 15px; /* espaço de dentro para fora*/
+   
+}
+
+#principal h1 {
+   text-align: center;
+   font-weight: normal;
+   font-size: 2em;
+   text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.186);;
+   margin-bottom: 0.5em;
+   
+}
+
+p{
+   text-align: left;
+   font-size: 1.5em;
+   text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.153);
+   margin-bottom: 0.5em;
+
+}
+
+input, select, textarea, button{
+   border-radius: 6px;
+   padding-left: 6px;
+}
+
+input:hover{
+   background: rgb(234, 227, 227);
+}
+
+select:hover{
+   background: rgb(234, 227, 227);
+}
+
+textarea:hover{
+   background: rgb(234, 227, 227);
+}
+
+.campo{
+   margin-bottom: 0.5em;
+   font-size: 1.1em;
+}
+
+.campo label{
+   margin-bottom: 0.1em;
+   display: block;  
+}
+
+.dentro{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-left: 14.7%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 30%;
+    padding-right: 30% ;
+    border: 0;
+    background-image: linear-gradient(to right, #1a0b53, #691969d6);
+}
+
+.dentro:hover{
+   color: rgb(218, 200, 200);
+   letter-spacing: 1px;
+   font-weight: bold;
+   background-image: linear-gradient(to right, #352186, #872c87d6);
+   
+}
+   
+
+
+.questionario{
+   margin-top: 0.5em ;
+   margin-bottom: 0.5em;
+   font-weight: normal;
+   font-size: 1.1em;
+}

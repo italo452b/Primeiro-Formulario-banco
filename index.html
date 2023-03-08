@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastros</title>
+</head>
+<body>
+    <div id="principal">
+    <div>
+        <h1>Cadastros Devs</h1>
+        <p>Preencha Seus Dados</p>
+    </div>
+
+    <form action="alunos.php" method="POST">
+        <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder=" Digite Seu Nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome">Sobrenome</label> 	
+            <input type="text" name="sobrenome" id="sobrenome" placeholder=" Digite Seu Sobrenome" required>
+        </div>
+    
+        <div class="campo">
+            <label for="cpf">Cpf</label>
+            <input type="text" name="cpf" id="cpf" placeholder=" Digite seu Cpf" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder=" Digite seu Email " required>
+        </div>
+
+        <div class="campo">
+            <label>Gênero</label>
+            <label>
+                <input type="radio" name="genero" id="masculino" value="Masculino" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" id="feminino" value="Feminino"> Feminino
+            </label>
+        </div>
+
+        <div class="campo">
+            <label>Estado</label>
+            <select nome="estado">
+                <option selected disabled >Selecione</option>
+                <option nome="estado">Amazonas</option>
+                <option nome="estado">São Paulo</option>
+                <option nome="estado">Rio de Janeiro</option>
+                <option nome="estado">Paraná</option>
+            </select>
+        </div>
+
+        <div>
+            <h3 class="questionario" name="tecnologia">Quais Tecnologias Deseja Estudar ?</h3>
+            <input type="checkbox" name="tecnologia" id="Tecnologias1" value="HTML">
+            <label for="tecnologias1">HTML</label>
+            <input type="checkbox" name="tecnologia" id="Tecnologias2" value="CSS">
+            <label for="tecnologias2">CSS</label>
+            <input type="checkbox" name="tecnologia" id="Tecnologias3" value="Javascript">
+            <label for="tecnologias3">JAVASCRIPT</label>
+            <input type="checkbox" name="tecnologia" id="Tecnologias4" value="PHP">
+            <label for="tecnologias4">PHP</label>
+            <input type="checkbox" name="tecnologia" id="Tecnologias5" value="Python">
+            <label for="tecnologias5">PYTHON</label>
+        </div>
+
+    <div>
+        <h3 class="questionario">O que levou você a escolher estudar conosco ? </h3>
+
+        <textarea name="feedback" id="feedback" cols="51" rows="6"></textarea>
+
+    </div>
+   
+    <div id="botao">
+        <button class= dentro type="submit">Enviar</button>
+    </div>
+    
+    </div>
+    </form>
+    
+</body>
+</html>
